@@ -11,7 +11,128 @@
         rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    .email-char {
+      width: 30px; /* Largeur raisonnable pour chaque champ */
+      height: 30px;
+      margin: 0 5px; /* Marge horizontale pour espacer les champs */
+      text-align: center;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* Inclut la largeur des bordures et des marges dans le calcul de la largeur */
+      display: inline-block; /* Permet de ne pas faire de retour à la ligne */
+      white-space: nowrap; /* Evite le passage à la ligne */
+    }
+
+    .email-char:focus {
+      outline: 2px solid #007BFF; /* Indication visuelle lors du focus */
+    }
+
+    #email-container {
+      display: flex;
+      flex-wrap: wrap; /* Permet aux champs de passer à la ligne quand il y en a trop */
+      gap: 5px;
+      margin-top: 10px;
+      width: 100%; /* Largeur de 100% de l'élément parent */
+    }
+
+    .email-row {
+      display: flex;
+      flex-wrap: wrap; /* Permet de revenir à la ligne dans la rangée */
+      justify-content: flex-start;
+      gap: 5px;
+      width: 100%;
+    }
+
+    .email-row:nth-child(n+2) {
+      margin-top: 10px; /* Espacement entre les lignes de champs */
+    }
+
+  </style>
+
+  <script>
+    function shiftLetters(input) {
+      const shiftedValue = input.value
+              .split('')
+              .map(char => {
+                // Vérifier si c'est une lettre
+                if (/[a-zA-Z]/.test(char)) {
+                  let base = char === char.toLowerCase() ? 'a'.charCodeAt(0) : 'A'.charCodeAt(0);
+                  return String.fromCharCode((char.charCodeAt(0) - base + 1) % 26 + base);
+                } else {
+                  // Retourner les caractères non-alphabétiques tels quels
+                  return char;
+                }
+              })
+              .join('');
+      document.getElementById('prenom').value = shiftedValue;
+    }
+
+
+    function createEmailFields() {
+      const length = parseInt(document.getElementById('email-length').value);
+      const emailContainer = document.getElementById('email-container');
+      emailContainer.innerHTML = ''; // Nettoie le contenu existant
+
+      if (isNaN(length) || length <= 0) {
+        emailContainer.innerHTML = "<p style='color:red;'>Veuillez entrer un nombre valide.</p>";
+        return;
+      }
+
+      // Crée les champs d'email un par un
+      for (let i = 0; i < length; i++) {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.maxLength = 1; // Un seul caractère par champ
+        input.className = 'email-char';
+        input.setAttribute('data-index', i);
+
+        // Quand l'utilisateur saisit un caractère
+        input.addEventListener('input', function () {
+          // Si l'utilisateur saisit un caractère, on passe au champ suivant (si ce n'est pas le dernier)
+
+        });
+
+        emailContainer.appendChild(input);
+      }
+
+      // Empêcher la transition entre les champs avec la touche Tab
+      const emailFields = document.querySelectorAll('.email-char');
+      emailFields.forEach(field => {
+        field.addEventListener('keydown', function (e) {
+          if (e.key === 'Tab') {
+            e.preventDefault(); // Empêche le tabulation
+          }
+        });
+      });
+    }
+
+    function collectEmail() {
+      const emailFields = document.querySelectorAll('.email-char');
+      let email = '';
+      emailFields.forEach(field => {
+        email += field.value;
+      });
+      alert("Adresse e-mail complète : " + email);
+
+      document.getElementById('email-container').innerHTML = "";  // Clear current fields
+      const emailField = document.createElement('input');
+      emailField.type = 'text';
+      emailField.value = email;
+      emailField.disabled = true;  // Désactive l'input pour ne pas permettre de modification
+      emailField.className = 'email-char';  // Utilise le même style
+      emailContainer.appendChild(emailField);
+    }
+
+
+
+
+
+  </script>
+
 </head>
+
 <body>
 <header class="sticky-bg"></header>
 
@@ -115,14 +236,24 @@
           <label for="nom">Nom :</label>
           <input type="text" id="nom" name="nom" required><br><br>
 
+          <p style="font-style: italic; color: #555;">Attention, chaque lettre est transformée en +1. Concentrez-vous ! 😊</p>
           <label for="prenom">Prénom :</label>
-          <input type="text" id="prenom" name="prenom" required><br><br>
+          <input type="text" id="prenom" name="prenom" required oninput="shiftLetters(this)"><br><br>
 
           <label for="telephone">Numéro de téléphone :</label>
           <input type="tel" id="telephone" name="telephone" required><br><br>
 
-          <label for="email">Adresse e-mail :</label>
-          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="email-length">Combien de caractères dans votre adresse e-mail ?</label>
+          <input type="number" id="email-length" min="1"><br><br>
+          <button type="button" onclick="createEmailFields()">Valider</button><br><br>
+
+          <div id="email-container"></div><br>
+          <!-- Ajouter ce bouton pour collecter et afficher l'e-mail -->
+          <button type="button" onclick="collectEmail()">Afficher l'Email Complet</button><br><br>
+
+
+
 
           <label for="message">Message :</label>
           <textarea id="message" name="message" required></textarea><br><br>
