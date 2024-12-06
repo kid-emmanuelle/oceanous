@@ -2,16 +2,13 @@
 
 /* Conteneur principal */
 
-body{
-    background-color: #1c1c2b;
-}
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #1c1c2b;
+    background-color: #146185;
     color: white;
     font-family: Arial, sans-serif;
     padding: 0 20px;

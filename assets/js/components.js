@@ -11,6 +11,7 @@ function loadHeader() {
                         <li><a href="#our-products">Podcasts</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="../../discovery.html">Découverte</a></li>
+                        <li><a href="../../quizzPage.html">Quizz</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,6 +52,7 @@ function loadHeaderDiscovery() {
                     <ul>
                         <li><a href="../../discovery.html">Découverte</a></li>
                         <li><a href="#about-us">Chatbot</a></li>
+                        <li><a href="../../quizzPage.html">Quizz</a></li>
                     </ul>
                 </div>
             </div>
