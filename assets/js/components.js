@@ -4,7 +4,7 @@ function loadHeader() {
         <nav>
             <div class="nav-links">
                 <i class="fa fa-bars" onclick="toggleMenu()"></i>
-                <a href="../../index.html" class="hero-link">OceaNous</a>
+                <a href="../../oceanous/index.html" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
                         <li><a href="#about-us">à propos</a></li>
@@ -48,7 +48,7 @@ function loadHeaderDiscovery() {
         <nav>
             <div class="nav-links">
                 <i class="fa fa-bars" onclick="toggleMenu()"></i>
-                <a href="../../index.html" class="hero-link">OceaNous</a>
+                <a href="../../oceanous/index.html" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
                         <li><a href="../../oceanous/discovery.html">découverte</a></li>
