@@ -7,11 +7,12 @@ function loadHeader() {
                 <a href="../../index.html" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
-                        <li><a href="#about-us">À Propos</a></li>
-                        <li><a href="#our-products">Podcasts</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="../../discovery.html">Découverte</a></li>
-                        <li><a href="../../quizzPage.html">Quizz</a></li>
+                        <li><a href="#about-us">à propos</a></li>
+                        <li><a href="#our-products">podcasts</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="../../discovery.html">découverte</a></li>
+                        <li><a href="../../quizzPage.html">quizz</a></li>
+                        <li><a href="../../animation.html">animation</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,8 +31,8 @@ function loadFooter() {
             <div class="footer-nav-links">
                 <ul>
                     <li><a href="#hero-section">OceaNous</a></li>
-                    <li><a href="#about-us">about</a></li>
-                    <li><a href="#our-products">products</a></li>
+                    <li><a href="#about-us">à propos</a></li>
+                    <li><a href="#our-products">podcast</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
@@ -50,9 +51,10 @@ function loadHeaderDiscovery() {
                 <a href="../../index.html" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
-                        <li><a href="../../discovery.html">Découverte</a></li>
-                        <li><a href="#about-us">Chatbot</a></li>
-                        <li><a href="../../quizzPage.html">Quizz</a></li>
+                        <li><a href="../../discovery.html">découverte</a></li>
+                        <li><a href="#about-us">chatbot</a></li>
+                        <li><a href="../../quizzPage.html">quizz</a></li>
+                        <li><a href="../../animation.html">animation</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OceaNous - Animation</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/animation.css"/>
+</head>
+<body>
+<header class="sticky-bg" id="header-section"></header>
+
+<section id="hero-section">
+  <div id="generator-container">
+    <div class="generator-header">
+      <h2>Générateur de Visualisations Océaniques</h2>
+      <p>Décrivez une scène liée à l'océan et à la santé, et l'IA créera une visualisation pour vous.</p>
+    </div>
+
+    <div class="generator-content">
+      <div class="input-section">
+        <div class="prompt-input">
+                <textarea
+                        id="prompt-text"
+                        placeholder="Décrivez la scène que vous souhaitez générer (par exemple: 'Une vague qui représente les ondes cérébrales pendant la méditation')"
+                        rows="4"
+                ></textarea>
+          <button id="generate-btn">Générer</button>
+        </div>
+
+        <div class="preset-prompts">
+          <h3>Suggestions:</h3>
+          <button class="preset-btn" data-prompt="Une vague qui représente les ondes cérébrales">Ondes Cérébrales
+          </button>
+          <button class="preset-btn" data-prompt="Le flux sanguin comparé aux courants océaniques">Courants Vitaux
+          </button>
+          <button class="preset-btn" data-prompt="La respiration synchronisée avec les marées">Marées Respiratoires
+          </button>
+        </div>
+      </div>
+
+      <div class="visualization-section">
+        <div class="loading-animation" id="loading">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <p>Création en cours...</p>
+        </div>
+        <div id="visualization-output"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<section id="footer-section"></section>
+
+<!-- Load JavaScript files -->
+<script src="assets/js/components.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/animation.js"></script>
+</body>
+</html>
