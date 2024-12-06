@@ -1,6 +1,10 @@
 /* QuizzPage.css */
 
 /* Conteneur principal */
+
+body{
+    background-color: #1c1c2b;
+}
 .container {
     display: flex;
     flex-direction: column;
