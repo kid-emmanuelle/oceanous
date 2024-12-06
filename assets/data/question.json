@@ -1,0 +1,82 @@
+{
+    "Ocean Geography": [
+      {
+        "front": "What is the largest ocean on Earth?",
+        "back": "The Pacific Ocean"
+      },
+      {
+        "front": "What is the name of the current that transports warm water from the Gulf of Mexico to Europe?",
+        "back": "The Gulf Stream"
+      },
+      {
+        "front": "What percentage of the Earth's surface is covered by oceans?",
+        "back": "Approximately 71%"
+      },
+      {
+        "front": "What is the Great Barrier Reef?",
+        "back": "It is the world's largest coral reef system, located off the coast of Australia."
+      }
+    ],
+    "Marine Ecosystems": [
+      {
+        "front": "Which ecosystem is known as the 'rainforest of the sea'?",
+        "back": "Coral reefs"
+      },
+      {
+        "front": "What is marine snow?",
+        "back": "It is a continuous shower of organic and inorganic material falling from the upper layers of the ocean to the deep sea."
+      },
+      {
+        "front": "Why are mangroves important to coastal ecosystems?",
+        "back": "They protect coastlines from erosion, provide habitat for marine life, and absorb carbon dioxide."
+      },
+      {
+        "front": "Which ocean layer has the highest concentration of marine life?",
+        "back": "The epipelagic zone, also known as the sunlight zone."
+      },
+      {
+        "front": "What is the primary source of energy for hydrothermal vent ecosystems?",
+        "back": "Chemosynthesis, where microbes convert chemicals like hydrogen sulfide into energy."
+      }
+    ],
+    "Carbon Cycle and Environmental Impact": [
+      {
+        "front": "What is the name of the process by which carbon dioxide is absorbed by the ocean?",
+        "back": "Oceanic carbon sequestration"
+      },
+      {
+        "front": "What is ocean acidification?",
+        "back": "It is the process by which seawater becomes more acidic due to the absorption of excess CO2 from the atmosphere."
+      },
+      {
+        "front": "What is the effect of increasing CO2 levels on marine organisms with calcium carbonate shells?",
+        "back": "It weakens their shells due to reduced availability of carbonate ions in acidified water."
+      },
+      {
+        "front": "What is the role of phytoplankton in the ocean's carbon cycle?",
+        "back": "They absorb CO2 during photosynthesis and form the base of the ocean food web."
+      },
+      {
+        "front": "What is the main greenhouse gas absorbed by the ocean?",
+        "back": "Carbon dioxide (CO2)"
+      }
+    ],
+    "Oceanic Phenomena and Currents": [
+      {
+        "front": "What is the term for the movement of cold, nutrient-rich water from the deep ocean to the surface?",
+        "back": "Upwelling"
+      },
+      {
+        "front": "What is the main factor that drives deep ocean currents?",
+        "back": "Thermohaline circulation, which is driven by temperature and salinity differences."
+      },
+      {
+        "front": "What causes ocean currents?",
+        "back": "A combination of wind, Earth's rotation (Coriolis effect), salinity, and temperature differences."
+      },
+      {
+        "front": "What is the term for an area in the ocean with very low oxygen levels?",
+        "back": "A dead zone"
+      }
+    ]
+}
