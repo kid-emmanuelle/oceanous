@@ -15,6 +15,7 @@ const nextBtn = document.getElementById("next-btn");
 const counter = document.getElementById("counter");
 const instruction = document.getElementById("instruction");
 const navigation = document.getElementById("navigation");
+const startBtn = document.getElementById("start-btn");
 
 // Fonction pour charger les données JSON
 function loadData() {
@@ -27,7 +28,7 @@ function loadData() {
         })
         .then((jsonData) => {
             data = jsonData;
-            console.log("Données JSON récupérées :", data);
+            console.log("Données JSON récupérées :", data); // Vérification des données
             renderThemes();
         })
         .catch((error) => {
@@ -36,7 +37,6 @@ function loadData() {
             instruction.style.display = "block";
         });
 }
-
 
 // Fonction pour afficher les thèmes dans le menu déroulant
 function renderThemes() {
@@ -58,6 +58,8 @@ function renderThemes() {
 // Met à jour la carte actuelle
 function updateCard() {
     const cards = selectedTheme ? data[selectedTheme] : [];
+    console.log("Cartes pour le thème sélectionné : ", cards); // Vérification des cartes
+
     if (cards.length === 0) {
         quizCard.style.display = "none";
         navigation.style.display = "none";
@@ -122,11 +124,21 @@ function handleThemeChange() {
     if (selectedTheme) {
         index = 0;
         updateCard();
+        startBtn.style.display = "block"; // Affiche le bouton "Commencer"
     } else {
         quizCard.style.display = "none";
         navigation.style.display = "none";
         instruction.textContent = "Veuillez sélectionner un thème.";
         instruction.style.display = "block";
+        startBtn.style.display = "none"; // Cache le bouton
+    }
+}
+
+// Fonction de redirection vers la page jeux.js
+function redirectToJeuxPage() {
+    if (selectedTheme) {
+        const url = `jeux.html?theme=${encodeURIComponent(selectedTheme)}`;
+        window.location.href = url; // Redirige vers la page jeux.html avec le thème en paramètre
     }
 }
 
@@ -135,6 +147,9 @@ themeDropdown.addEventListener("change", handleThemeChange);
 prevBtn.addEventListener("click", handlePrev);
 nextBtn.addEventListener("click", handleNext);
 quizCard.addEventListener("click", handleFlip);
+
+// Ajout de l'écouteur d'événement pour rediriger vers jeux.js
+startBtn.addEventListener("click", redirectToJeuxPage);
 
 // Initialisation
 loadData();

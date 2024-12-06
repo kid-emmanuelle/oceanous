@@ -1,82 +1,83 @@
 {
-    "Ocean Geography": [
+    "Geographie_de_l_Ocean": [
       {
-        "front": "What is the largest ocean on Earth?",
-        "back": "The Pacific Ocean"
+        "front": "Quel est le plus grand océan sur Terre ?",
+        "back": "L'océan Pacifique"
       },
       {
-        "front": "What is the name of the current that transports warm water from the Gulf of Mexico to Europe?",
-        "back": "The Gulf Stream"
+        "front": "Quel est le nom du courant qui transporte l'eau chaude du golfe du Mexique vers l'Europe ?",
+        "back": "Le Gulf Stream"
       },
       {
-        "front": "What percentage of the Earth's surface is covered by oceans?",
-        "back": "Approximately 71%"
+        "front": "Quel pourcentage de la surface terrestre est recouvert par les océans ?",
+        "back": "Environ 71 %"
       },
       {
-        "front": "What is the Great Barrier Reef?",
-        "back": "It is the world's largest coral reef system, located off the coast of Australia."
+        "front": "Qu'est-ce que la Grande Barrière de Corail ?",
+        "back": "C'est le plus grand système de récifs coralliens au monde, situé au large de la côte australienne."
       }
     ],
-    "Marine Ecosystems": [
+    "Ecosystemes_Marins": [
       {
-        "front": "Which ecosystem is known as the 'rainforest of the sea'?",
-        "back": "Coral reefs"
+        "front": "Quel écosystème est connu sous le nom de 'forêt tropicale de la mer' ?",
+        "back": "Les récifs coralliens"
       },
       {
-        "front": "What is marine snow?",
-        "back": "It is a continuous shower of organic and inorganic material falling from the upper layers of the ocean to the deep sea."
+        "front": "Qu'est-ce que la neige marine ?",
+        "back": "C'est une pluie continue de matières organiques et inorganiques qui tombent des couches supérieures de l'océan vers les fonds marins."
       },
       {
-        "front": "Why are mangroves important to coastal ecosystems?",
-        "back": "They protect coastlines from erosion, provide habitat for marine life, and absorb carbon dioxide."
+        "front": "Pourquoi les mangroves sont-elles importantes pour les écosystèmes côtiers ?",
+        "back": "Elles protègent les côtes contre l'érosion, fournissent un habitat pour la vie marine et absorbent le dioxyde de carbone."
       },
       {
-        "front": "Which ocean layer has the highest concentration of marine life?",
-        "back": "The epipelagic zone, also known as the sunlight zone."
+        "front": "Quelle couche de l'océan contient la plus grande concentration de vie marine ?",
+        "back": "La zone épipélagique, également connue sous le nom de zone de lumière."
       },
       {
-        "front": "What is the primary source of energy for hydrothermal vent ecosystems?",
-        "back": "Chemosynthesis, where microbes convert chemicals like hydrogen sulfide into energy."
+        "front": "Quelle est la principale source d'énergie pour les écosystèmes des évents hydrothermaux ?",
+        "back": "La chimiosynthèse, où des microbes convertissent des produits chimiques comme le sulfure d'hydrogène en énergie."
       }
     ],
-    "Carbon Cycle and Environmental Impact": [
+    "Cycle_du_Carbone_et_Impact_Environnemental": [
       {
-        "front": "What is the name of the process by which carbon dioxide is absorbed by the ocean?",
-        "back": "Oceanic carbon sequestration"
+        "front": "Quel est le nom du processus par lequel le dioxyde de carbone est absorbé par l'océan ?",
+        "back": "La séquestration du carbone océanique"
       },
       {
-        "front": "What is ocean acidification?",
-        "back": "It is the process by which seawater becomes more acidic due to the absorption of excess CO2 from the atmosphere."
+        "front": "Qu'est-ce que l'acidification des océans ?",
+        "back": "C'est le processus par lequel l'eau de mer devient plus acide en raison de l'absorption de l'excès de CO2 de l'atmosphère."
       },
       {
-        "front": "What is the effect of increasing CO2 levels on marine organisms with calcium carbonate shells?",
-        "back": "It weakens their shells due to reduced availability of carbonate ions in acidified water."
+        "front": "Quel est l'effet de l'augmentation des niveaux de CO2 sur les organismes marins avec des coquilles en carbonate de calcium ?",
+        "back": "Cela affaiblit leurs coquilles en raison de la réduction de la disponibilité des ions carbonates dans l'eau acidifiée."
       },
       {
-        "front": "What is the role of phytoplankton in the ocean's carbon cycle?",
-        "back": "They absorb CO2 during photosynthesis and form the base of the ocean food web."
+        "front": "Quel est le rôle du phytoplancton dans le cycle du carbone océanique ?",
+        "back": "Ils absorbent le CO2 lors de la photosynthèse et forment la base du réseau alimentaire océanique."
       },
       {
-        "front": "What is the main greenhouse gas absorbed by the ocean?",
-        "back": "Carbon dioxide (CO2)"
+        "front": "Quel est le principal gaz à effet de serre absorbé par l'océan ?",
+        "back": "Le dioxyde de carbone (CO2)"
       }
     ],
-    "Oceanic Phenomena and Currents": [
+    "Phenomenes_Oceaniques_et_Courants": [
       {
-        "front": "What is the term for the movement of cold, nutrient-rich water from the deep ocean to the surface?",
-        "back": "Upwelling"
+        "front": "Quel est le terme pour le mouvement de l'eau froide et riche en nutriments des profondeurs de l'océan vers la surface ?",
+        "back": "Le remontée (Upwelling)"
       },
       {
-        "front": "What is the main factor that drives deep ocean currents?",
-        "back": "Thermohaline circulation, which is driven by temperature and salinity differences."
+        "front": "Quel est le principal facteur qui entraîne les courants océaniques profonds ?",
+        "back": "La circulation thermohaline, qui est alimentée par les différences de température et de salinité."
       },
       {
-        "front": "What causes ocean currents?",
-        "back": "A combination of wind, Earth's rotation (Coriolis effect), salinity, and temperature differences."
+        "front": "Qu'est-ce qui cause les courants océaniques ?",
+        "back": "Une combinaison de vent, de la rotation de la Terre (effet de Coriolis), de la salinité et des différences de température."
       },
       {
-        "front": "What is the term for an area in the ocean with very low oxygen levels?",
-        "back": "A dead zone"
+        "front": "Quel est le terme pour une zone dans l'océan avec des niveaux d'oxygène très faibles ?",
+        "back": "Une zone morte"
       }
     ]
-}
+  }
+  

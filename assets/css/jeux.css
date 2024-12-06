@@ -1,0 +1,75 @@
+/* Mise en page du jeu */
+body {
+    background-color: #1e1e2f; /* Fond sombre */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 cartes par ligne */
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    background-color: #4f4f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px; /* Réduction de la taille de la police */
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; /* Éviter que le texte dépasse */
+    white-space: normal; /* Permet au texte de s'ajuster sur plusieurs lignes */
+    word-wrap: break-word; /* Assure que les mots trop longs soient coupés */
+}
+
+.card.selected {
+    background-color: #2d2d3d; /* Surbrillance de la carte sélectionnée */
+}
+
+.card.matched {
+    background-color: #4CAF50; /* Couleur de fond pour les cartes correspondantes */
+    color: #fff;
+    cursor: default;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.instruction {
+    font-size: 18px;
+    margin-top: 20px;
+}
