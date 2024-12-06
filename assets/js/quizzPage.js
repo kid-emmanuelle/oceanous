@@ -19,7 +19,7 @@ const startBtn = document.getElementById("start-btn");
 
 // Fonction pour charger les données JSON
 function loadData() {
-    fetch("../data/question.json")
+    fetch("../oceanous/assets/data/question.json")
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
