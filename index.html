@@ -49,6 +49,18 @@
       margin-top: 10px; /* Espacement entre les lignes de champs */
     }
 
+    #animated-message {
+      display: inline-block;
+      font-size: 20px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .letter {
+      display: inline-block;
+      transition: transform 0.5s ease-in-out;
+    }
+
   </style>
 
   <script>
@@ -124,6 +136,30 @@
       emailField.className = 'email-char';  // Utilise le même style
       emailContainer.appendChild(emailField);
     }
+
+    function moveLetters() {
+      const messageElement = document.getElementById('animated-message');
+      const messageText = document.getElementById('message').value;
+
+      // Réinitialise le contenu du message animé
+      messageElement.innerHTML = '';
+
+      // On boucle sur chaque caractère du message et on applique un petit mouvement
+      for (let i = 0; i < messageText.length; i++) {
+        const letter = document.createElement('span');
+        letter.className = 'letter';
+        letter.textContent = messageText[i];
+
+        // Applique une animation de mouvement à chaque lettre avec un petit délai pour chaque caractère
+        setTimeout(() => {
+          letter.style.transform = `translateY(${Math.random() * 10 - 5}px)`; // Déplacement vertical aléatoire
+        }, i * 50); // Diffère l'animation pour chaque lettre pour un effet progressif
+
+        messageElement.appendChild(letter);
+      }
+    }
+
+
 
 
 
@@ -232,16 +268,14 @@
   <div class="contact-row reveal">
     <div class="contact-col">
       <div class="testimonial-wrapper">
+        <h1>Contact (Attention, ça peut ne pas être facile... )</h1>
         <form action="" method="POST">
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required><br><br>
+
 
           <p style="font-style: italic; color: #555;">Attention, chaque lettre est transformée en +1. Concentrez-vous ! 😊</p>
-          <label for="prenom">Prénom :</label>
+          <label for="prenom">Nom complet :</label>
           <input type="text" id="prenom" name="prenom" required oninput="shiftLetters(this)"><br><br>
 
-          <label for="telephone">Numéro de téléphone :</label>
-          <input type="tel" id="telephone" name="telephone" required><br><br>
 
 
           <label for="email-length">Combien de caractères dans votre adresse e-mail ?</label>
@@ -254,9 +288,15 @@
 
 
 
-
           <label for="message">Message :</label>
-          <textarea id="message" name="message" required></textarea><br><br>
+          <p id="animated-message"></p>
+          <textarea id="message" name="message" required oninput="moveLetters()"></textarea><br><br>
+
+
+
+
+
+
 
           <input type="submit" value="Envoyer">
         </form>
