@@ -19,7 +19,7 @@ const startBtn = document.getElementById("start-btn");
 
 // Fonction pour charger les données JSON
 function loadData() {
-    fetch("../assets/data/question.json")
+    fetch("../data/question.json")
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
