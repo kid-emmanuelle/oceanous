@@ -7,10 +7,9 @@ function loadHeader() {
                 <a href="#hero-section" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
-                        <li><a href="#about-us">about</a></li>
-                        <li><a href="#our-products">products</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        <li><a href="../../discovery.html">discovery</a></li>
+                        <li><a href="#about-us">Découverte</a></li>
+                        <li><a href="#our-products">Podcasts</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
