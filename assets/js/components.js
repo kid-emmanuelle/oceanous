@@ -4,12 +4,14 @@ function loadHeader() {
         <nav>
             <div class="nav-links">
                 <i class="fa fa-bars" onclick="toggleMenu()"></i>
-                <a href="#hero-section" class="hero-link">OceaNous</a>
+                <a href="../../index.html" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
-                        <li><a href="#about-us">Découverte</a></li>
+                        <li><a href="#about-us">À Propos</a></li>
                         <li><a href="#our-products">Podcasts</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="../../discovery.html">Découverte</a></li>
+                        <li><a href="../../quizzPage.html">Quizz</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,8 +42,30 @@ function loadFooter() {
     footer.innerHTML = footerHtml;
 }
 
+function loadHeaderDiscovery() {
+    const headerHtml = `
+        <nav>
+            <div class="nav-links">
+                <i class="fa fa-bars" onclick="toggleMenu()"></i>
+                <a href="../../index.html" class="hero-link">OceaNous</a>
+                <div id="nav-links-sub">
+                    <ul>
+                        <li><a href="../../discovery.html">Découverte</a></li>
+                        <li><a href="#about-us">Chatbot</a></li>
+                        <li><a href="../../quizzPage.html">Quizz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    `;
+
+    const header = document.getElementById('header-section');
+    header.innerHTML = headerHtml;
+}
+
 // Load all components when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     loadHeader();
     loadFooter();
+    loadHeaderDiscovery();
 });
