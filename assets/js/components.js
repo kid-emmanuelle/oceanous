@@ -10,6 +10,7 @@ function loadHeader() {
                         <li><a href="#about-us">about</a></li>
                         <li><a href="#our-products">products</a></li>
                         <li><a href="#contact">contact</a></li>
+                        <li><a href="../../discovery.html">discovery</a></li>
                     </ul>
                 </div>
             </div>

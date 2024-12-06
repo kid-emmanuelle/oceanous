@@ -1,0 +1,387 @@
+#body-info-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    gap: 60px;
+}
+
+.human-body-section {
+    flex: 0 0 300px;
+    position: sticky;
+    top: 250px;
+    height: fit-content;
+}
+
+.body-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-section {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(87, 201, 213, 0.3);
+}
+
+.arrow {
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #57c9d5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #57c9d5;
+    border-bottom: 2px solid #57c9d5;
+    left: -5px;
+    top: -4px;
+    transform: rotate(45deg);
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.content h3 {
+    color: #146185;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.content > p {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.benefits h4, .effects h4 {
+    color: #ff7d16;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.benefits p, .effects p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    #body-info-container {
+        flex-direction: column;
+    }
+
+    .human-body-section {
+        position: relative;
+        top: 0;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Keep existing human body SVG styles */
+.human-body {
+    width: 207px;
+    position: relative;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+}
+
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+
+/* Keep all your existing SVG positioning styles */
+.human-body svg#head {
+    margin-left: -28.5px;
+    top: -6px;
+}
+
+.human-body svg#chest {
+    margin-left: -43.5px;
+    top: 88px;
+}
+
+.human-body svg#stomach {
+    margin-left: -37.5px;
+    top: 130px;
+}
+
+/* Human */
+.human-body {
+    width: 207px;
+    position: relative;
+    height: 420px;
+    display: block;
+    /*margin: auto;*/
+}
+
+.human-body svg:hover {
+    cursor: pointer;
+}
+
+.human-body svg:hover path {
+    fill: #ff7d16;
+}
+
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+
+.human-body svg#head {
+    margin-left: -28.5px;
+    top: -6px;
+}
+
+.human-body svg#left-shoulder {
+    margin-left: -53.5px;
+    top: 69px;
+}
+
+.human-body svg#right-shoulder {
+    margin-left: 13.5px;
+    top: 69px;
+}
+
+.human-body svg#left-arm {
+    margin-left: -78px;
+    top: 112px;
+}
+
+.human-body svg#right-arm {
+    margin-left: 38px;
+    top: 112px;
+    z-index: 10001;
+}
+
+.human-body svg#chest {
+    margin-left: -43.5px;
+    top: 88px;
+}
+
+.human-body svg#stomach {
+    margin-left: -37.5px;
+    top: 130px;
+}
+
+.human-body svg#left-leg {
+    margin-left: -46.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg#right-leg {
+    margin-left: 1.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg#left-hand {
+    margin-left: -102.5px;
+    top: 224px;
+}
+
+.human-body svg#right-hand {
+    margin-left: 66.5px;
+    top: 224px;
+    z-index: 10000;
+}
+
+.human-body svg#left-foot {
+    margin-left: -35.5px;
+    top: 455px;
+}
+
+.human-body svg#right-foot {
+    margin-left: 5.5px;
+    top: 455px;
+}
+
+#area {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Courier New;
+    color: #a5a5a5;
+}
+
+#area #data {
+    color: black;
+}
+
+/* Add this to your discovery.css */
+/* Update these styles in your discovery.css */
+.chat-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: url('../images/terminal.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-header {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.chat-messages {
+    height: 400px;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.message {
+    max-width: 70%;
+    padding: 12px 16px;
+    border-radius: 15px;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-message {
+    background: rgba(20, 97, 133, 0.9);
+    color: white;
+    align-self: flex-end;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bot-message {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    align-self: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chat-input {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.chat-input input:focus {
+    outline: none;
+    border-color: #146185;
+    box-shadow: 0 0 0 2px rgba(20, 97, 133, 0.2);
+}
+
+.chat-input button {
+    padding: 12px 24px;
+    background: #ff7d16;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    font-weight: 500;
+}
+
+.chat-input button:hover {
+    background: #e66700;
+    transform: translateY(-1px);
+}
+
+.chat-input button:active {
+    transform: translateY(1px);
+}
+
+.chat-input button:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.typing-indicator {
+    display: none;
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 16px;
+    border-radius: 15px;
+    color: #666;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.typing-indicator.visible {
+    display: block;
+}
+
+/* Custom scrollbar for the chat messages */
+.chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
