@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let timeElapsed = 0;
 
 // Charger les données
-fetch("../assets/data/question.json")
+fetch("../oceanous/assets/data/question.json")
     .then((response) => response.json())
     .then((data) => {
         const urlParams = new URLSearchParams(window.location.search);
