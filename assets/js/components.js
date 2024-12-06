@@ -10,9 +10,9 @@ function loadHeader() {
                         <li><a href="#about-us">à propos</a></li>
                         <li><a href="#our-products">podcasts</a></li>
                         <li><a href="#contact">contact</a></li>
-                        <li><a href="../../discovery.html">découverte</a></li>
-                        <li><a href="../../quizzPage.html">quizz</a></li>
-                        <li><a href="../../animation.html">animation</a></li>
+                        <li><a href="../../oceanous/discovery.html">découverte</a></li>
+                        <li><a href="../../oceanous/quizzPage.html">quizz</a></li>
+                        <li><a href="../../oceanous/animation.html">animation</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,10 +51,10 @@ function loadHeaderDiscovery() {
                 <a href="../../index.html" class="hero-link">OceaNous</a>
                 <div id="nav-links-sub">
                     <ul>
-                        <li><a href="../../discovery.html">découverte</a></li>
+                        <li><a href="../../oceanous/discovery.html">découverte</a></li>
                         <li><a href="#about-us">chatbot</a></li>
-                        <li><a href="../../quizzPage.html">quizz</a></li>
-                        <li><a href="../../animation.html">animation</a></li>
+                        <li><a href="../../oceanous/quizzPage.html">quizz</a></li>
+                        <li><a href="../../oceanous/animation.html">animation</a></li>
                     </ul>
                 </div>
             </div>
